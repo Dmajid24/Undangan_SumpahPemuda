@@ -63,3 +63,20 @@ body {
         min-width: 0;
     }
 }
+
+
+/* Paksa judul utama tampil besar di mobile */
+@media screen and (max-width: 640px) {
+    main h1.print-error {
+        display: block !important;
+        width: 100% !important;
+        max-width: none !important;
+        font-size: 19vw !important;
+        line-height: 0.82 !important;
+        letter-spacing: -0.06em !important;
+        white-space: normal !important;
+        overflow: visible !important;
+        transform: none !important;
+        margin-bottom: 1.5rem !important;
+    }
+}
