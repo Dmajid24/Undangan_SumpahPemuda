@@ -1,0 +1,33 @@
+body {
+            background-color: #F4EFE6;
+            color: #1A1A1A;
+            overflow-x: hidden; 
+        }
+
+        .halftone-bg {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: radial-gradient(#1A1A1A 1.5px, transparent 1.5px);
+            background-size: 14px 14px;
+            opacity: 0.08;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .paper-overlay {
+            position: fixed;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            opacity: 0.25;
+            mix-blend-mode: multiply;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .neo-card {
+            transition: all 0.2s ease-out;
+        }
+        
+        .print-error {
+            text-shadow: 5px 5px 0px #1A1A1A, -3px -3px 0px rgba(217, 37, 37, 0.5);
+        }
