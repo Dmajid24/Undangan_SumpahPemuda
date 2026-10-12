@@ -31,3 +31,35 @@ body {
         .print-error {
             text-shadow: 5px 5px 0px #1A1A1A, -3px -3px 0px rgba(217, 37, 37, 0.5);
         }
+
+        
+/* Responsive khusus HP */
+@media (max-width: 640px) {
+    body {
+        overflow-x: clip;
+    }
+
+    main {
+        min-width: 0;
+    }
+
+    .neo-card {
+        max-width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    h1 {
+        overflow-wrap: anywhere;
+    }
+
+    section {
+        min-width: 0;
+    }
+
+    section > div {
+        min-width: 0;
+    }
+}
